@@ -1,4 +1,6 @@
-
+<?php
+require_once('C:/xampp/htdocs/projetgl/model/testModel.php');
+?>
 
 <div class="card">
   <div class="card-header">
@@ -22,7 +24,7 @@
                     </tr>
                 </thead>
                 <tbody>
-                <?php foreach ($mkd as $key => $value) {?>
+                <?php foreach ($postes as $key => $value) {?>
                     <tr>
                       <th scope="row"> <?php echo $value['id']  ?></th>
                       <td> <?= $value['titre']  ?></td>
@@ -44,9 +46,7 @@
                     </tr>
 
                 <?php } ?>
-<script> 
-window.open();
-</script>
+
                    
                    
                 </tbody>
